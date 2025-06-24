@@ -1,0 +1,20 @@
+models:
+  - name: dim_movies
+    description: Dimenstion table for movie data
+    columns:
+      - name: movieid
+        description: Primary key for the movies
+        tests:
+          - not_null
+      - name: movie_title
+        description: Movie title with year in it.
+        tests:
+          - not_null
+  - name: dim_users
+    description: Union of users from tags and ratings
+    columns:
+      - name: userid
+        description: After joins and unions from tags and ratings
+        tests:
+          - not_null
+          - unique

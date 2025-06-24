@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: movielens_project
+    schema: raw_movielens
+    tables:
+      - name: raw_movies
+        description: Raw movie information with columns movieId,title,genres
+
+      - name: raw_tags
+        description: Raw tags information, represents one tag applied to one movie by one user with columns userId,movieId,tag,timestamp
+ 
+      - name: raw_ratings
+        description: Raw ratings information, represents one rating of one movie by one user with columns userId,movieId,rating,timestamp
+
+      - name: raw_links
+        description: Raw links information, represents one movie with columns movieId,imdbId,tmdbId
+
+      - name: raw_genome_tags
+        description: Raw genome_tags information, represents each movie in the genome has a value for every tag in the genome with columns tagId,tag
+      
+      - name: raw_genome_scores
+        description: Raw genome_scores information, represents movie-tag relevance data with columns movieId,tagId,relevance
+ 
