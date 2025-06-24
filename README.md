@@ -8,6 +8,7 @@ The dataset includes user ratings, tags, and movie metadata. The goal is to buil
 
 ## 📁 Project Structure
 
+```bash
 movielens_project/
 ├── models/
 │ ├── staging/ # Source-level cleaning models (src_*)
@@ -20,9 +21,7 @@ movielens_project/
 ├── packages.yml # dbt packages (e.g., dbt_utils)
 ├── README.md # You’re here!
 
-yaml
-Copy
-Edit
+```
 
 ---
 
@@ -116,7 +115,7 @@ dbt snapshot
 dbt docs generate
 dbt docs serve
 
-
+```
 ---
 
 ## 🤝 Contributions
